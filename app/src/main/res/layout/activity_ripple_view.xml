@@ -4,14 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.love.lixinxin.lee.MainActivity">
+    tools:context="com.love.lixinxin.lee.ui.activity.RippleViewActivity">
 
-    
-    <Button
-        android:text="@string/ripple"
-        android:id="@+id/btn_ripple"
+
+    <com.love.lixinxin.lee.view.RippleView
+        android:id="@+id/rippleView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-    
-    
+        android:layout_height="match_parent"/>
+
+
 </RelativeLayout>
