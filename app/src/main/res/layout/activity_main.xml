@@ -1,17 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:orientation="vertical"
     android:layout_height="match_parent"
-    tools:context="com.love.lixinxin.lee.MainActivity">
+    >
 
-    
+
     <Button
-        android:text="@string/ripple"
         android:id="@+id/btn_ripple"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-    
-    
-</RelativeLayout>
+        android:layout_height="wrap_content"
+        android:text="@string/ripple"/>
+
+
+    <Button
+        android:id="@+id/btn_tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="tabLayout"/>
+
+
+</LinearLayout>

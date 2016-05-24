@@ -1,4 +1,4 @@
-package com.love.lixinxin.lee;
+package com.love.lixinxin.lee.ui.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,7 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
-import com.love.lixinxin.lee.ui.activity.RippleViewActivity;
+import com.love.lixinxin.lee.R;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -25,11 +25,22 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    @OnClick(R.id.btn_ripple)
+    @OnClick({R.id.btn_ripple, R.id.btn_tabLayout})
     public void startActivity(View v) {
+
         Intent intent;
-        intent = new Intent(this, RippleViewActivity.class);
-        startActivity(intent);
+
+        switch (v.getId()) {
+            case R.id.btn_ripple:
+                intent = new Intent(this, RippleViewActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.btn_tabLayout:
+                intent = new Intent(this, TabLayoutActivity.class);
+                startActivity(intent);
+                break;
+        }
+
     }
 
 }
