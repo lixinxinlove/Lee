@@ -8,7 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.love.lixinxin.lee.R;
 import com.love.lixinxin.lee.ui.adapter.FragmentAdapter;
-import com.love.lixinxin.lee.ui.fragment.TabLayoutFragment;
+import com.love.lixinxin.lee.ui.fragment.MeiZhiFragment;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -42,7 +42,7 @@ public class TabLayoutActivity extends AppCompatActivity {
 
         List<Fragment> fragments = new ArrayList<>();
         for (int i = 0; i < titles.size(); i++) {
-            fragments.add(new TabLayoutFragment());
+            fragments.add(new MeiZhiFragment());
         }
 
         FragmentAdapter mFragmentAdapter = new FragmentAdapter(getSupportFragmentManager(), fragments, titles);
